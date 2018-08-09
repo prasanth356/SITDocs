@@ -1,0 +1,30 @@
+<div class="container">
+  <h1 class="welcome text-center">Welcome to <br> Source Infotech</h1>
+      <div class="card card-container">
+      <h2 class='login_title text-center'>SignUp</h2>
+      <hr>
+
+          <form #form="ngForm" (ngSubmit)="submit(form)" class="form-signin">
+            <div class="form-group">
+              <p class="input_title">Firstname</p>
+              <input ngModel type="text" name="firstname" class="login_box" placeholder="Enter firstname" required autofocus>
+              <p class="input_title">Lastname</p>
+              <input ngModel type="text" name="lastname" class="login_box" placeholder="Enter lastname" required autofocus>
+              <p class="input_title">Email</p>
+              <input ngModel type="text" name="email" class="login_box" placeholder="Enter email" required autofocus>
+              <select ngModel name="role">
+                <option value="sales">Sales</option>
+                <option value="recruiter">Recruiter</option>
+              </select>
+              <p class="input_title">Password</p>
+              <input ngModel type="password" name="password" class="login_box" placeholder="*******" required >
+              <p class="input_title">Confirm Password</p>
+              <input ngModel type="password" name="passwordConfirm" class="login_box" placeholder="*******" required >
+
+
+              <button class="btn btn-lg btn-primary" type="cancel" >Cancel</button>
+              <button class="btn btn-lg btn-primary" type="submit" >Submit</button>
+            </div>
+          </form><!-- /form -->
+      </div><!-- /card-container -->
+  </div><!-- /container -->

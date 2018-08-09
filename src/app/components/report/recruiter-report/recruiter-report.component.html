@@ -1,0 +1,35 @@
+<top-nav></top-nav>
+<div class="row">
+    <div class="column left">
+        <select>
+            <option value="Sales"routerLink="/salesreport">Sales</option>
+            <option value="Recruiter"routerLink="/recruiterreport">Recruiter</option>
+            <option value="All">All</option>
+            </select>
+      </div>
+    <div class="column right">
+  <div class="row">
+    <div class="col-md-6">
+        <input type="Date" [(ngModel)]="fromDate" class="form-control" />
+    </div>
+    <div class="col-md-6">
+        <input type="Date" [(ngModel)]="toDate" class="form-control" />
+    </div>
+  </div>
+  </div>
+
+  <table class="table table-bordered ele-sticky">
+      <thead>
+          <tr>
+              <th> SIT Recruiter Name </th>
+              <th> Candidate Name</th>
+              <th> Candidate Phone </th>
+              <th> Skill Set </th>
+              <th> Candidate Company Name </th>
+              <th> Date of Interview</th>
+              <th> Interview Total</th>
+              <th> Details</th>
+              <th> Status</th>  
+            </tr>
+          </thead>
+      </table>

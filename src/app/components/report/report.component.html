@@ -1,0 +1,19 @@
+<top-nav></top-nav>
+<div class="row">
+    <div class="column left">
+        <select>
+            <option value="Sales"routerLink="/salesreport">Sales</option>
+            <option value="Recruiter"routerLink="/recruiterreport">Recruiter</option>
+            <option value="All">All</option>
+            </select>
+      </div>
+    <div class="column right">
+  <div class="row">
+    <div class="col-md-6">
+        <input type="Date" [(ngModel)]="fromDate" class="form-control" />
+    </div>
+    <div class="col-md-6">
+        <input type="Date" [(ngModel)]="toDate" class="form-control" />
+    </div>
+  </div>
+  </div>

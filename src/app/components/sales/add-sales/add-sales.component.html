@@ -1,0 +1,55 @@
+<top-nav></top-nav>
+<div class="container">
+    <div class="row">
+        <form [formGroup]="summaryForm" (ngSubmit)="onSave()">
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">SIT Sales Name</label>
+                <input type="text" class="form-control" formControlName="sitsalesName">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">Candidate Name</label>
+                <input type="text" class="form-control" formControlName="candidateName">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">Date of Interview</label>
+                <input type="text" class="form-control" formControlName="dateofInterview">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">End Client Name</label>
+                <input type="text" class="form-control" formControlName="endClientName">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">PV Recruiter Name</label>
+                <input type="text" class="form-control" formControlName="pvrecruiterName">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">PV Recruiter Phone</label>
+                <input type="text" class="form-control" formControlName="pvrecruiterPhone">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">PV Recruiter Email</label>
+                <input type="text" class="form-control" formControlName="pvrecruiterEmail">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">PV Sales Name</label>
+                <input type="text" class="form-control" formControlName="pvsalesName">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">PV Sales Phone</label>
+                <input type="text" class="form-control" formControlName="pvsalesPhone">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">PV Sales Email</label>
+                <input type="text" class="form-control" formControlName="pvsalesEmail">
+            </div>
+            <span class="help-block" *ngIf="!summaryForm.valid && summaryForm.touched">
+                <strong style="color:red;">Please enter a valid field!</strong>
+            </span>
+            <div class="clearfix"></div>
+            <div>
+                <button type="submit" class="btn btn-success" [disabled]="!summaryForm.valid">Save</button>
+                <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

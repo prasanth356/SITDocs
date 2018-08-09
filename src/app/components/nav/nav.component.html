@@ -1,0 +1,22 @@
+<nav class="navbar navbar-inverse">
+  <!-- <div class="container"> -->
+    <div class="navbar-header"
+      (click) = "routeHome()">
+      <a class="navbar-brand" style="color:whitesmoke; cursor:pointer;">Source Infotech</a>
+    </div>
+    
+    <ul class="nav navbar-nav">
+      <li routerLinkActive = 'active'><a routerLink="/customers">Candidates</a></li>
+      <li routerLinkActive = ''><a routerLink="/interview">Interview</a></li>
+      <li routerLinkActive = ''><a routerLink="/primeVendor">Prime Vendor</a></li>
+      <li routerLinkActive = ''><a routerLink="/summary">Summary</a></li>
+      <li routerLinkActive = ''><a routerLink="/sales">Sales</a></li>
+      <li routerLinkActive = ''><a routerLink="/recruiter">Recruiter</a></li>
+      <li routerLinkActive = ''><a routerLink="/report">Report</a></li>
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class = "logout" routerLinkActive = ''><a routerLink="/login">Logout</a></li>
+    </ul>
+  <!-- </div> -->
+</nav>

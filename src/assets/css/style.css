@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+body,html,p{margin:0px; padding:0px; font-family: 'Roboto', sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+aside, details, figcaption, figure, ins, summary, small, mark, title, video, footer, header, hgroup, nav, section, article {display:block;}
+.clear{padding:0; margin:0; line-height:0; height:0; font-size:0; clear:both; width:100%; display:block;}
+h1, h2, h3, h4, h5, h6 {padding:0; margin:0; font-weight:normal; font-family: 'Roboto', sans-serif;}
+html, body {height:100%; width:100%; padding:0; margin:0;}
+body *{box-sizing:border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+ul li{list-style:none;}
+input,button{outline:none; border:none;}
+a, a:hover, a:focus{text-decoration:none; outline:none;}
+a:active,a:hover {outline: 0;}
+button{transition:all .5s;}
+:focus{outline:none;}
+img{border:none;}
+
+/********Main Css********/
+
+header{margin-top:10px; float:left; width:100%;}
+header .headTop{background:#222; border-radius:5px; float:left; width:100%;}
+header .headTop ul{margin:0px; padding:0px; text-align: center;}
+header .headTop ul li{float:left; color:#FFF; padding:20px; font-size:20px;}
+header .headTop ul li a{color:#CCC; font-size:14px;}
+header .headTop ul li:last-child{float:right;}
+
+.ourSystem{text-align:center; margin:40px 0; float:left; width:100%;}
+.ourSystem .smry{width:32%; display:inline-block;}
+.ourSystem .smry figure{background:#efefef; padding:10px; margin:10px 0; display:inline-block; border-radius:100%;}
+.ourSystem .smry figure img{margin:0 auto; opacity:0.6;}
+.ourSystem .smry h3{color:#555; font-size:20px;}
+.ourSystem .smry p{line-height:22px; font-size:15px; color:#666; margin:10px 0;}
+.systemBox{ cursor:pointer; display:inline-block; margin:15px 0; border:1px solid #CCC; width:100%; text-align:center; padding:0 20px;}
+.systemBox figure{background:#efefef; padding:10px; margin:10px 0; display:inline-block; border-radius:100%;}
+.systemBox figure img{margin:0 auto; opacity:0.6;}
+.systemBox h3{padding:10px 0; font-size:16px; color:#666; font-weight:500; border-top:1px solid #ededed; text-transform:uppercase;}
+.systemBox p{padding:10px 0; font-size:16px; border-top:1px solid #ededed;}
+
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {margin:0; padding:0; border:0; list-style:none; line-height:1; display:block; position:relative; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+#cssmenu:after,
+#cssmenu > ul:after{content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0;}
+#cssmenu #menu-button{display:none;}
+#cssmenu{width:auto; line-height:1; background:#222; border-radius:5px;}
+#menu-line {position:absolute; top:0; left:0; height:3px; background:#009ae1; -webkit-transition:all 0.25s ease-out; -moz-transition:all 0.25s ease-out; -ms-transition:all 0.25s ease-out; -o-transition:all 0.25s ease-out; transition:all 0.25s ease-out; display:none;}
+#cssmenu.align-center > ul {font-size:0; text-align:center;}
+#cssmenu.align-center > ul > li {display:inline-block; float:none;}
+#cssmenu.align-center ul ul {text-align:left;}
+#cssmenu.align-right > ul > li {float:right;}
+#cssmenu.align-right ul ul {text-align:right;}
+#cssmenu > ul > li{float:left; padding:20px; color:#FFF; font-size:20px; font-weight:500;}
+#cssmenu > ul > li:last-child{float:right;}
+#cssmenu > ul > li > a{font-size:14px; display:block; line-height:20px; font-weight:400; text-decoration:none; color:#CCC; -webkit-transition:color .2s ease; -moz-transition:color .2s ease; -ms-transition:color .2s ease; -o-transition:color .2s ease; transition:color .2s ease;}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.active > a {color:#FFF;}
+#cssmenu > ul > li.has-sub > a {padding-right:25px;}
+#cssmenu > ul > li.has-sub > a::after {position:absolute; top:21px; right:10px; width:4px; height:4px; border-bottom:1px solid #000; border-right:1px solid #000; content:""; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg); -webkit-transition:border-color 0.2s ease; -moz-transition:border-color 0.2s ease; -ms-transition:border-color 0.2s ease; -o-transition:border-color 0.2s ease; transition:border-color 0.2s ease;}
+#cssmenu > ul > li.has-sub:hover > a::after {border-color:#009ae1;}
+#cssmenu ul ul {position:absolute; left:-9999px;}
+#cssmenu li:hover > ul {left:auto;}
+#cssmenu.align-right li:hover > ul {right:0;}
+#cssmenu ul ul ul {margin-left:100%; top:0;}
+#cssmenu.align-right ul ul ul {margin-left:0; margin-right:100%;}
+#cssmenu ul ul li {height:0; -webkit-transition:height .2s ease; -moz-transition:height .2s ease; -ms-transition:height .2s ease; -o-transition:height .2s ease; transition:height .2s ease;}
+#cssmenu ul li:hover > ul > li {height:32px;}
+#cssmenu ul ul li a {padding:10px 20px; width:160px; font-size:12px; background:#333; text-decoration:none; color:#ddd; -webkit-transition:color .2s ease; -moz-transition:color .2s ease; -ms-transition:color .2s ease; -o-transition:color .2s ease; transition:color .2s ease;}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li a:hover {color:#fff;}
+#cssmenu ul ul li.has-sub > a::after {position:absolute; top:13px; right:10px; width:4px; height:4px; border-bottom:1px solid #ddd; border-right:1px solid #ddd; content:""; -webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -ms-transform:rotate(-45deg); -o-transform:rotate(-45deg); transform:rotate(-45deg); -webkit-transition:border-color 0.2s ease; -moz-transition:border-color 0.2s ease; -ms-transition:border-color 0.2s ease; -o-transition:border-color 0.2s ease; transition:border-color 0.2s ease;}
+#cssmenu.align-right ul ul li.has-sub > a::after{right:auto; left:10px; border-bottom:0; border-right:0; border-top:1px solid #ddd; border-left:1px solid #ddd;}
+#cssmenu ul ul li.has-sub:hover > a::after {border-color:#fff;}
+
+
+@media all and (max-width: 991px) {
+
+}
+
+@media all and (max-width: 767px) {
+
+#cssmenu {width:100%;}
+#cssmenu ul {width:100%;display:none;}
+#cssmenu.align-center > ul,
+#cssmenu.align-right ul ul {text-align:left;}
+#cssmenu ul li,
+#cssmenu ul ul li,
+#cssmenu ul li:hover > ul > li {width:100%;height:auto;border-top:1px solid rgba(120, 120, 120, 0.15);}
+#cssmenu ul li a,
+#cssmenu ul ul li a {width:100%;}
+#cssmenu > ul > li,
+#cssmenu.align-center > ul > li,
+#cssmenu.align-right > ul > li {float:none;display:block;}
+#cssmenu ul ul li a {padding:20px 20px 20px 30px;font-size:12px;color:#000;background:none;}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li a:hover {color:#000;}
+#cssmenu ul ul ul li a {padding-left:40px;}
+#cssmenu ul ul,
+#cssmenu ul ul ul {position:relative;left:0;right:auto;width:100%;margin:0;}
+#cssmenu > ul > li.has-sub > a::after,
+#cssmenu ul ul li.has-sub > a::after {display:none;}
+#menu-line {display:none;}
+#cssmenu #menu-button {display:block;padding:20px;color:#000;cursor:pointer;font-size:12px;text-transform:uppercase;}
+#cssmenu #menu-button::after {content:'';position:absolute;top:12px;right:20px;display:block;width:25px;height:2px;background:#FFF;}
+#cssmenu #menu-button::before {content:'';position:absolute;top:20px;right:20px;display:block;width:25px;height:10px;border-top:2px solid #FFF;border-bottom:2px solid #FFF;}
+#cssmenu .submenu-button {position:absolute;z-index:10;right:0;top:0;display:block;border-left:1px solid rgba(120, 120, 120, 0.15);height:52px;width:52px;cursor:pointer;}
+#cssmenu .submenu-button::after {content:'';position:absolute;top:21px;left:26px;display:block;width:1px;height:11px;background:#000;z-index:99;}
+#cssmenu .submenu-button::before {content:'';position:absolute;left:21px;top:26px;display:block;width:11px;height:1px;background:#000;z-index:99;}
+#cssmenu .submenu-button.submenu-opened:after {display:none;}
+
+.ourSystem .smry{width:100%;}
+}
+
+@media all and (max-width: 479px) {
+
+}

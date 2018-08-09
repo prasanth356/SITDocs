@@ -1,0 +1,40 @@
+<top-nav></top-nav>
+
+<div class="container">
+    <div class="row">
+        <form [formGroup]="summaryForm" (ngSubmit)="onSave()">
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">SIT Recruiter Name</label>
+                <input type="text" class="form-control" formControlName="sitrecruiterName">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">Candidate Name</label>
+                <input type="text" class="form-control" formControlName="candidateName">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">Candidate Email</label>
+                <input type="text" class="form-control" formControlName="candidateEmail">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">Candidate Phone</label>
+                <input type="text" class="form-control" formControlName="candidatePhone">
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+              <label for="">Skill Set</label>
+              <input type="text" class="form-control" formControlName="skillSet">
+          </div>
+          <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="">Candidate Company Name</label>
+                <input type="text" class="form-control" formControlName="candidateCompanyName">
+            </div>
+          <span class="help-block" *ngIf="!summaryForm.valid && summaryForm.touched">
+            <strong style="color:red;">Please enter a valid field!</strong>
+        </span>
+        <div class="clearfix"></div>
+        <div>
+            <button type="submit" class="btn btn-success" [disabled]="!summaryForm.valid">Save</button>
+            <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+        </div>
+    </form>
+</div>
+</div>
